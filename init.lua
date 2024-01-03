@@ -664,6 +664,15 @@ cmp.setup {
       end
     end, { 'i', 's' }),
   },
+  formatting = {
+    expandable_indicator = true,
+    fields = { 'abbr', 'kind', 'menu' },
+    format = function(_, vim_item)
+      vim_item.kind = ""
+      vim_item.menu = ""
+      return vim_item
+    end,
+  },
   sources = {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
