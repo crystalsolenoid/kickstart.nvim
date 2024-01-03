@@ -625,9 +625,18 @@ cmp.setup {
   },
   completion = {
     completeopt = 'menu,menuone,noinsert',
+    autocomplete = false,
   },
   mapping = cmp.mapping.preset.insert {
-    ['<C-n>'] = cmp.mapping.select_next_item(),
+    ['<C-n>'] = cmp.mapping(function(_)
+      if cmp.visible() then
+        cmp.select_next_item()
+      else
+        cmp.complete({
+          reason = cmp.ContextReason.Auto,
+        })
+      end
+    end, { 'i', 's' }),
     ['<C-p>'] = cmp.mapping.select_prev_item(),
     ['<C-b>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
