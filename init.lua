@@ -274,6 +274,9 @@ require('lazy').setup({
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 
+-- set default tabstop (how much space a \t takes up)
+vim.o.tabstop = 4
+
 vim.o.linebreak = true
 vim.o.breakindent = true
 vim.o.showbreak = '+++ '
