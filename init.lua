@@ -114,7 +114,7 @@ require('lazy').setup({
   },
 
   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim', opts = {} },
+  { 'folke/which-key.nvim',  opts = {} },
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -275,46 +275,46 @@ require('lazy').setup({
 -- NOTE: You can change these options as you wish!
 
 -- how much space a \t takes up
-vim.o.tabstop = 4
+vim.o.tabstop     = 4
 -- how much space is added when pressing tab
 -- (or auto-indenting)
-vim.o.shiftwidth = 4
+vim.o.shiftwidth  = 4
 
-vim.o.linebreak = true
+vim.o.linebreak   = true
 vim.o.breakindent = true
-vim.o.showbreak = '+++ '
+vim.o.showbreak   = '+++ '
 
 -- Set highlight on search
-vim.o.hlsearch = false
+vim.o.hlsearch    = false
 
 -- Make line numbers default
-vim.wo.number = true
+vim.wo.number     = true
 
 -- Disable mouse mode
-vim.o.mouse = false
-vim.o.ttymouse = false
+vim.o.mouse       = false
+vim.o.ttymouse    = false
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
-vim.o.clipboard = 'unnamedplus'
+vim.o.clipboard   = 'unnamedplus'
 
 -- Enable break indent
 vim.o.breakindent = true
 
 -- Save undo history
-vim.o.undofile = true
+vim.o.undofile    = true
 
 -- Case-insensitive searching UNLESS \C or capital in search
-vim.o.ignorecase = true
-vim.o.smartcase = true
+vim.o.ignorecase  = true
+vim.o.smartcase   = true
 
 -- Keep signcolumn on by default
 vim.wo.signcolumn = 'yes'
 
 -- Decrease update time
-vim.o.updatetime = 250
-vim.o.timeoutlen = 300
+vim.o.updatetime  = 250
+vim.o.timeoutlen  = 300
 
 -- Turn off distracting diagnostics
 vim.diagnostic.config({
