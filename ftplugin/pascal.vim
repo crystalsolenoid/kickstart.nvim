@@ -1,0 +1,1 @@
+setl ff=dos
