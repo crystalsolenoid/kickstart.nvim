@@ -293,8 +293,9 @@ vim.o.showbreak   = '+++ '
 -- Set highlight on search
 vim.o.hlsearch    = false
 
--- Make line numbers default
-vim.wo.number     = true
+-- Make (relative) line numbers default
+vim.o.number      = true
+vim.o.rnu         = true
 
 -- Disable mouse mode
 vim.o.mouse       = false
