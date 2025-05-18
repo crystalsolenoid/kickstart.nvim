@@ -298,8 +298,8 @@ vim.o.number      = true
 vim.o.rnu         = true
 
 -- Disable mouse mode
-vim.o.mouse       = false
-vim.o.ttymouse    = false
+vim.o.mouse       = ''
+-- vim.o.ttymouse    = false
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
